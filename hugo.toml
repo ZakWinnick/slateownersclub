@@ -25,13 +25,9 @@ summarylength = 70
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "Events"
-    url = "/#events"
-    weight = 2
-  [[menu.main]]
     name = "Membership"
     url = "/#membership"
-    weight = 3
+    weight = 2
 
 [params]
   tagline = "Built Simple. Made Yours."
@@ -42,13 +38,14 @@ summarylength = 70
 
   heyloApiKey = "e2367bdf-83af-4c65-968b-692fac480942"
   heyloCommunityId = "263e1b28-c0da-4d81-9c83-3c65bc00337b"
-  heyloGroupUrl = "https://heylo.group/slateownersclub"
+  heyloGroupUrl = "https://heylo.group/slateowners"
 
   tinylyticsId = "Eo2Qc1sfY79tA_4K83iq"
   buttondownUsername = "slateownersclub"
 
   [params.social]
     twitter = "slateownersclub"
+    instagram = "slateownersclub"
 
 [taxonomies]
   tag = "tags"
