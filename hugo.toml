@@ -34,7 +34,7 @@ summarylength = 70
   description = "The first community for Slate drivers—owners, builders, and tinkerers who believe the best trucks are the ones you make your own."
   ogImage = "/images/soc-logo-social.png"
   primaryColor = "#2B2D2F"
-  accentColor = "#D4852F"
+  accentColor = "#3dc8c0"
 
   heyloApiKey = "e2367bdf-83af-4c65-968b-692fac480942"
   heyloCommunityId = "263e1b28-c0da-4d81-9c83-3c65bc00337b"

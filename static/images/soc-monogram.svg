@@ -1,0 +1,14 @@
+<svg width="96" height="80" viewBox="0 0 96 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Block S -->
+  <g transform="translate(6, 8)">
+    <rect x="0" y="0" width="38" height="8" fill="#a0a0a0"/>
+    <rect x="0" y="0" width="8" height="24" fill="#a0a0a0"/>
+    <rect x="0" y="16" width="38" height="8" fill="#a0a0a0"/>
+    <rect x="30" y="16" width="8" height="24" fill="#a0a0a0"/>
+    <rect x="0" y="32" width="38" height="8" fill="#a0a0a0"/>
+  </g>
+  <!-- OC in Chakra Petch -->
+  <text x="52" y="45" font-family="'Chakra Petch', sans-serif" font-weight="700" font-size="34" letter-spacing="2" fill="#3dc8c0">OC</text>
+  <!-- Label -->
+  <text x="48" y="66" font-family="'Chakra Petch', sans-serif" font-weight="400" font-size="8" letter-spacing="5" fill="#555">OWNERS CLUB</text>
+</svg>

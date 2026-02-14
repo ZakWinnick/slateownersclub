@@ -6,7 +6,7 @@
 /* --------------------------------------------------------------------------
    Google Fonts Import
    -------------------------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap');
 
 /* --------------------------------------------------------------------------
    CSS Custom Properties (Variables)
@@ -19,8 +19,8 @@
   --color-secondary: #222222;
   --color-background: #FFFFFF;
   --color-background-light: #F5F5F3;
-  --color-accent: #D4852F;
-  --color-accent-light: #E09A4E;
+  --color-accent: #3dc8c0;
+  --color-accent-light: #2ba8a1;
   --color-text: #222222;
   --color-text-light: #666666;
   --color-text-muted: #888888;
@@ -28,8 +28,8 @@
   --color-border: #e0e0e0;
 
   /* Typography */
-  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-heading: 'Chakra Petch', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 
   /* Font Sizes */
   --text-xs: 0.75rem;
@@ -571,6 +571,13 @@ p {
   display: block;
   max-width: 320px;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-logo svg {
+  width: 100%;
+  height: auto;
   margin: 0 auto var(--space-xl);
 }
 
@@ -622,10 +629,10 @@ p {
 
 .btn:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(212, 133, 47, 0.3);
+  box-shadow: 0 0 0 3px rgba(61, 200, 192, 0.3);
 }
 
-/* Accent button - amber with dark text */
+/* Accent button - teal with dark text */
 .btn-accent {
   display: inline-flex;
   align-items: center;
@@ -657,7 +664,7 @@ p {
 
 .btn-accent:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(212, 133, 47, 0.3);
+  box-shadow: 0 0 0 3px rgba(61, 200, 192, 0.3);
 }
 
 /* BEM-style primary button */
@@ -1359,7 +1366,7 @@ p {
 .form-select:focus {
   outline: none;
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(212, 133, 47, 0.1);
+  box-shadow: 0 0 0 3px rgba(61, 200, 192, 0.1);
 }
 
 .form-input::placeholder,
