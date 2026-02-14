@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slate Owners Club — Logo v4</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #060606;
+    color: #ccc;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .page-header {
+    text-align: center;
+    padding: 50px 20px 30px;
+    border-bottom: 1px solid #1a1a1a;
+  }
+  .page-header h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.15em;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .page-header p { font-size: 0.8rem; color: #555; margin-top: 6px; }
+
+  .section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 30px 20px;
+  }
+  .section-title {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: #3dc8c0;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .section-heading {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+  .section-desc {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-bottom: 30px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    background: #111;
+    border: 1px solid #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .card .display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 40px;
+    min-height: 280px;
+  }
+  .card .display.bg-black { background: #0a0a0a; }
+  .card .display.bg-white { background: #f0eeeb; }
+  .card .display.sm { min-height: 200px; padding: 36px 30px; }
+  .card .meta {
+    padding: 16px 22px;
+    border-top: 1px solid #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card .meta .name {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #ccc;
+  }
+  .card .meta .tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    color: #555;
+    letter-spacing: 0.1em;
+  }
+
+  .avatar-row {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .av {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .av .frame {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border: 2px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .av .frame.circle { border-radius: 50%; }
+  .av .frame.sq { border-radius: 16px; }
+  .av .lbl {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.55rem;
+    color: #555;
+    letter-spacing: 0.1em;
+  }
+
+  .divider {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 1px;
+    background: #1a1a1a;
+  }
+
+  .banner {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    aspect-ratio: 3/1;
+    background: #0a0a0a;
+    border: 1px solid #1e1e1e;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 140%, #3dc8c00c 0%, transparent 50%);
+  }
+
+  @media (max-width: 480px) {
+    .row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Slate Owners Club</h1>
+  <p>Logo v4 — Wordmark + Monogram</p>
+</div>
+
+<!-- ============================================================
+     OPTION 1 — STACKED WORDMARK
+     Large SLATE on top, OWNERS CLUB below, clean hierarchy
+     ============================================================ -->
+<div class="section">
+  <div class="section-title">Option 1</div>
+  <div class="section-heading">Stacked Wordmark</div>
+  <div class="section-desc">Clean two-line stack. SLATE dominates in gray, OWNERS CLUB sits below in teal at a smaller weight. Better proportioned than the current logo — "OWNERS CLUB" is sized to be readable, not an afterthought.</div>
+
+  <div class="row">
+    <div class="card">
+      <div class="display bg-black">
+        <svg width="300" height="120" viewBox="0 0 300 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- SLATE — pixel-block letterforms -->
+          <g transform="translate(7, 8)">
+            <!-- S: 3 horizontal bars + left-top vertical + right-bottom vertical -->
+            <rect x="0" y="0" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="0" y="0" width="10" height="30" fill="#a0a0a0"/>
+            <rect x="0" y="20" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="38" y="20" width="10" height="30" fill="#a0a0a0"/>
+            <rect x="0" y="40" width="48" height="10" fill="#a0a0a0"/>
+
+            <!-- L -->
+            <rect x="58" y="0" width="10" height="50" fill="#a0a0a0"/>
+            <rect x="58" y="40" width="44" height="10" fill="#a0a0a0"/>
+
+            <!-- A -->
+            <rect x="112" y="0" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="112" y="0" width="10" height="50" fill="#a0a0a0"/>
+            <rect x="150" y="0" width="10" height="50" fill="#a0a0a0"/>
+            <rect x="112" y="20" width="48" height="10" fill="#a0a0a0"/>
+
+            <!-- T -->
+            <rect x="170" y="0" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="189" y="0" width="10" height="50" fill="#a0a0a0"/>
+
+            <!-- E -->
+            <rect x="228" y="0" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="228" y="0" width="10" height="50" fill="#a0a0a0"/>
+            <rect x="228" y="20" width="38" height="10" fill="#a0a0a0"/>
+            <rect x="228" y="40" width="48" height="10" fill="#a0a0a0"/>
+          </g>
+
+          <!-- OWNERS CLUB in Chakra Petch -->
+          <text x="150" y="92" text-anchor="middle"
+                font-family="'Chakra Petch', sans-serif" font-weight="600"
+                font-size="24" letter-spacing="10" fill="#3dc8c0">OWNERS CLUB</text>
+        </svg>
+      </div>
+      <div class="meta">
+        <span class="name">Stacked — Dark</span>
+        <span class="tag">OPT 1</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="display bg-white">
+        <svg width="300" height="120" viewBox="0 0 300 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(7, 8)">
+            <rect x="0" y="0" width="48" height="10" fill="#808080"/>
+            <rect x="0" y="0" width="10" height="30" fill="#808080"/>
+            <rect x="0" y="20" width="48" height="10" fill="#808080"/>
+            <rect x="38" y="20" width="10" height="30" fill="#808080"/>
+            <rect x="0" y="40" width="48" height="10" fill="#808080"/>
+            <rect x="58" y="0" width="10" height="50" fill="#808080"/>
+            <rect x="58" y="40" width="44" height="10" fill="#808080"/>
+            <rect x="112" y="0" width="48" height="10" fill="#808080"/>
+            <rect x="112" y="0" width="10" height="50" fill="#808080"/>
+            <rect x="150" y="0" width="10" height="50" fill="#808080"/>
+            <rect x="112" y="20" width="48" height="10" fill="#808080"/>
+            <rect x="170" y="0" width="48" height="10" fill="#808080"/>
+            <rect x="189" y="0" width="10" height="50" fill="#808080"/>
+            <rect x="228" y="0" width="48" height="10" fill="#808080"/>
+            <rect x="228" y="0" width="10" height="50" fill="#808080"/>
+            <rect x="228" y="20" width="38" height="10" fill="#808080"/>
+            <rect x="228" y="40" width="48" height="10" fill="#808080"/>
+          </g>
+          <text x="150" y="92" text-anchor="middle"
+                font-family="'Chakra Petch', sans-serif" font-weight="600"
+                font-size="24" letter-spacing="10" fill="#2ba8a1">OWNERS CLUB</text>
+        </svg>
+      </div>
+      <div class="meta">
+        <span class="name">Stacked — Light</span>
+        <span class="tag">OPT 1</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     OPTION 2 — SOC MONOGRAM (for avatar/icon use)
+     ============================================================ -->
+<div class="section">
+  <div class="section-title">Option 2</div>
+  <div class="section-heading">SOC Monogram</div>
+  <div class="section-desc">The "S" in the blocky gray letterform paired with "OC" in teal — similar to your current approach but with better sizing, spacing, and weight balance. Several layout options for different contexts.</div>
+
+  <div class="avatar-row">
+    <!-- Version A: Large S, smaller OC baseline-aligned -->
+    <div class="av">
+      <div class="frame sq" style="background:#0a0a0a;">
+        <svg width="96" height="80" viewBox="0 0 96 80" fill="none">
+          <!-- Large S in block style -->
+          <g transform="translate(6, 8)">
+            <rect x="0" y="0" width="38" height="8" fill="#a0a0a0"/>
+            <rect x="0" y="0" width="8" height="24" fill="#a0a0a0"/>
+            <rect x="0" y="16" width="38" height="8" fill="#a0a0a0"/>
+            <rect x="30" y="16" width="8" height="24" fill="#a0a0a0"/>
+            <rect x="0" y="32" width="38" height="8" fill="#a0a0a0"/>
+          </g>
+          <!-- OC in Chakra Petch, aligned to S baseline -->
+          <text x="52" y="45" font-family="'Chakra Petch', sans-serif" font-weight="700" font-size="34" letter-spacing="2" fill="#3dc8c0">OC</text>
+          <!-- Subtle underline -->
+          <text x="48" y="66" font-family="'Chakra Petch', sans-serif" font-weight="400" font-size="8" letter-spacing="5" fill="#555">OWNERS CLUB</text>
+        </svg>
+      </div>
+      <span class="lbl">A — BASELINE</span>
+    </div>
+
+    <!-- Version B: S large centered, OC subscript -->
+    <div class="av">
+      <div class="frame sq" style="background:#0a0a0a;">
+        <svg width="96" height="96" viewBox="0 0 96 96" fill="none">
+          <!-- Centered block S -->
+          <g transform="translate(16, 12)">
+            <rect x="0" y="0" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="0" y="0" width="10" height="30" fill="#a0a0a0"/>
+            <rect x="0" y="20" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="38" y="20" width="10" height="30" fill="#a0a0a0"/>
+            <rect x="0" y="40" width="48" height="10" fill="#a0a0a0"/>
+          </g>
+          <!-- OC tucked into bottom-right -->
+          <text x="68" y="76" font-family="'Chakra Petch', sans-serif" font-weight="700" font-size="22" letter-spacing="1" fill="#3dc8c0">OC</text>
+        </svg>
+      </div>
+      <span class="lbl">B — CORNER TUCK</span>
+    </div>
+
+    <!-- Version C: All three letters in block style -->
+    <div class="av">
+      <div class="frame sq" style="background:#0a0a0a;">
+        <svg width="100" height="56" viewBox="0 0 100 56" fill="none">
+          <g transform="translate(4, 8)">
+            <!-- S -->
+            <rect x="0" y="0" width="26" height="6" fill="#a0a0a0"/>
+            <rect x="0" y="0" width="6" height="16" fill="#a0a0a0"/>
+            <rect x="0" y="10" width="26" height="6" fill="#a0a0a0"/>
+            <rect x="20" y="10" width="6" height="16" fill="#a0a0a0"/>
+            <rect x="0" y="20" width="26" height="6" fill="#a0a0a0"/>
+
+            <!-- O -->
+            <rect x="32" y="0" width="26" height="6" fill="#3dc8c0"/>
+            <rect x="32" y="0" width="6" height="26" fill="#3dc8c0"/>
+            <rect x="52" y="0" width="6" height="26" fill="#3dc8c0"/>
+            <rect x="32" y="20" width="26" height="6" fill="#3dc8c0"/>
+
+            <!-- C -->
+            <rect x="64" y="0" width="26" height="6" fill="#3dc8c0"/>
+            <rect x="64" y="0" width="6" height="26" fill="#3dc8c0"/>
+            <rect x="64" y="20" width="26" height="6" fill="#3dc8c0"/>
+          </g>
+          <text x="50" y="48" text-anchor="middle" font-family="'DM Sans', sans-serif" font-weight="300" font-size="5.5" letter-spacing="3" fill="#555">SLATE OWNERS CLUB</text>
+        </svg>
+      </div>
+      <span class="lbl">C — ALL BLOCK</span>
+    </div>
+
+    <!-- Version D: Stacked monogram -->
+    <div class="av">
+      <div class="frame circle" style="background:#0a0a0a;">
+        <svg width="70" height="90" viewBox="0 0 70 90" fill="none">
+          <!-- S on top, large -->
+          <g transform="translate(11, 8)">
+            <rect x="0" y="0" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="0" y="0" width="10" height="30" fill="#a0a0a0"/>
+            <rect x="0" y="20" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="38" y="20" width="10" height="30" fill="#a0a0a0"/>
+            <rect x="0" y="40" width="48" height="10" fill="#a0a0a0"/>
+          </g>
+          <!-- OC below -->
+          <text x="35" y="78" text-anchor="middle" font-family="'Chakra Petch', sans-serif" font-weight="700" font-size="20" letter-spacing="4" fill="#3dc8c0">OC</text>
+        </svg>
+      </div>
+      <span class="lbl">D — STACKED CIRCLE</span>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     OPTION 3 — COMBINED LOCKUP (wordmark + monogram system)
+     ============================================================ -->
+<div class="section">
+  <div class="section-title">Option 3 — Recommended System</div>
+  <div class="section-heading">Full Lockup + Monogram Pair</div>
+  <div class="section-desc">Use the stacked wordmark for banners, headers, and merch — and pair it with the SOC monogram (Version A or B) as the avatar mark. This gives you a consistent system that works at every size.</div>
+
+  <div class="row">
+    <!-- Full lockup with teal accent bar -->
+    <div class="card">
+      <div class="display bg-black">
+        <svg width="300" height="140" viewBox="0 0 300 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- SLATE -->
+          <g transform="translate(7, 10)">
+            <rect x="0" y="0" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="0" y="0" width="10" height="30" fill="#a0a0a0"/>
+            <rect x="0" y="20" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="38" y="20" width="10" height="30" fill="#a0a0a0"/>
+            <rect x="0" y="40" width="48" height="10" fill="#a0a0a0"/>
+
+            <rect x="58" y="0" width="10" height="50" fill="#a0a0a0"/>
+            <rect x="58" y="40" width="44" height="10" fill="#a0a0a0"/>
+
+            <rect x="112" y="0" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="112" y="0" width="10" height="50" fill="#a0a0a0"/>
+            <rect x="150" y="0" width="10" height="50" fill="#a0a0a0"/>
+            <rect x="112" y="20" width="48" height="10" fill="#a0a0a0"/>
+
+            <rect x="170" y="0" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="189" y="0" width="10" height="50" fill="#a0a0a0"/>
+
+            <rect x="228" y="0" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="228" y="0" width="10" height="50" fill="#a0a0a0"/>
+            <rect x="228" y="20" width="38" height="10" fill="#a0a0a0"/>
+            <rect x="228" y="40" width="48" height="10" fill="#a0a0a0"/>
+          </g>
+
+          <!-- Teal accent bar -->
+          <rect x="7" y="66" width="60" height="3" rx="1.5" fill="#3dc8c0"/>
+
+          <!-- OWNERS CLUB -->
+          <text x="7" y="92"
+                font-family="'Chakra Petch', sans-serif" font-weight="600"
+                font-size="22" letter-spacing="9" fill="#3dc8c0">OWNERS CLUB</text>
+
+          <!-- Tagline -->
+          <text x="7" y="118"
+                font-family="'DM Sans', sans-serif" font-weight="300"
+                font-size="9" letter-spacing="3" fill="#444">Built Simple. Made Yours.</text>
+        </svg>
+      </div>
+      <div class="meta">
+        <span class="name">Full Lockup — Left Aligned</span>
+        <span class="tag">RECOMMENDED</span>
+      </div>
+    </div>
+
+    <!-- Centered variant -->
+    <div class="card">
+      <div class="display bg-black">
+        <svg width="300" height="140" viewBox="0 0 300 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- SLATE — centered -->
+          <g transform="translate(12, 10)">
+            <rect x="0" y="0" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="0" y="0" width="10" height="30" fill="#a0a0a0"/>
+            <rect x="0" y="20" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="38" y="20" width="10" height="30" fill="#a0a0a0"/>
+            <rect x="0" y="40" width="48" height="10" fill="#a0a0a0"/>
+
+            <rect x="58" y="0" width="10" height="50" fill="#a0a0a0"/>
+            <rect x="58" y="40" width="44" height="10" fill="#a0a0a0"/>
+
+            <rect x="112" y="0" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="112" y="0" width="10" height="50" fill="#a0a0a0"/>
+            <rect x="150" y="0" width="10" height="50" fill="#a0a0a0"/>
+            <rect x="112" y="20" width="48" height="10" fill="#a0a0a0"/>
+
+            <rect x="170" y="0" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="189" y="0" width="10" height="50" fill="#a0a0a0"/>
+
+            <rect x="228" y="0" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="228" y="0" width="10" height="50" fill="#a0a0a0"/>
+            <rect x="228" y="20" width="38" height="10" fill="#a0a0a0"/>
+            <rect x="228" y="40" width="48" height="10" fill="#a0a0a0"/>
+          </g>
+
+          <!-- Centered teal bar -->
+          <rect x="120" y="66" width="60" height="3" rx="1.5" fill="#3dc8c0"/>
+
+          <!-- OWNERS CLUB — centered -->
+          <text x="150" y="92" text-anchor="middle"
+                font-family="'Chakra Petch', sans-serif" font-weight="600"
+                font-size="22" letter-spacing="9" fill="#3dc8c0">OWNERS CLUB</text>
+
+          <text x="150" y="118" text-anchor="middle"
+                font-family="'DM Sans', sans-serif" font-weight="300"
+                font-size="9" letter-spacing="3" fill="#444">Built Simple. Made Yours.</text>
+        </svg>
+      </div>
+      <div class="meta">
+        <span class="name">Full Lockup — Centered</span>
+        <span class="tag">RECOMMENDED</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Light background versions -->
+  <div class="row">
+    <div class="card">
+      <div class="display bg-white">
+        <svg width="300" height="140" viewBox="0 0 300 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(7, 10)">
+            <rect x="0" y="0" width="48" height="10" fill="#808080"/>
+            <rect x="0" y="0" width="10" height="30" fill="#808080"/>
+            <rect x="0" y="20" width="48" height="10" fill="#808080"/>
+            <rect x="38" y="20" width="10" height="30" fill="#808080"/>
+            <rect x="0" y="40" width="48" height="10" fill="#808080"/>
+            <rect x="58" y="0" width="10" height="50" fill="#808080"/>
+            <rect x="58" y="40" width="44" height="10" fill="#808080"/>
+            <rect x="112" y="0" width="48" height="10" fill="#808080"/>
+            <rect x="112" y="0" width="10" height="50" fill="#808080"/>
+            <rect x="150" y="0" width="10" height="50" fill="#808080"/>
+            <rect x="112" y="20" width="48" height="10" fill="#808080"/>
+            <rect x="170" y="0" width="48" height="10" fill="#808080"/>
+            <rect x="189" y="0" width="10" height="50" fill="#808080"/>
+            <rect x="228" y="0" width="48" height="10" fill="#808080"/>
+            <rect x="228" y="0" width="10" height="50" fill="#808080"/>
+            <rect x="228" y="20" width="38" height="10" fill="#808080"/>
+            <rect x="228" y="40" width="48" height="10" fill="#808080"/>
+          </g>
+          <rect x="7" y="66" width="60" height="3" rx="1.5" fill="#2ba8a1"/>
+          <text x="7" y="92" font-family="'Chakra Petch', sans-serif" font-weight="600" font-size="22" letter-spacing="9" fill="#2ba8a1">OWNERS CLUB</text>
+          <text x="7" y="118" font-family="'DM Sans', sans-serif" font-weight="300" font-size="9" letter-spacing="3" fill="#999">Built Simple. Made Yours.</text>
+        </svg>
+      </div>
+      <div class="meta">
+        <span class="name">Full Lockup — Light / Left</span>
+        <span class="tag">RECOMMENDED</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="display bg-white">
+        <svg width="300" height="140" viewBox="0 0 300 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(12, 10)">
+            <rect x="0" y="0" width="48" height="10" fill="#808080"/>
+            <rect x="0" y="0" width="10" height="30" fill="#808080"/>
+            <rect x="0" y="20" width="48" height="10" fill="#808080"/>
+            <rect x="38" y="20" width="10" height="30" fill="#808080"/>
+            <rect x="0" y="40" width="48" height="10" fill="#808080"/>
+            <rect x="58" y="0" width="10" height="50" fill="#808080"/>
+            <rect x="58" y="40" width="44" height="10" fill="#808080"/>
+            <rect x="112" y="0" width="48" height="10" fill="#808080"/>
+            <rect x="112" y="0" width="10" height="50" fill="#808080"/>
+            <rect x="150" y="0" width="10" height="50" fill="#808080"/>
+            <rect x="112" y="20" width="48" height="10" fill="#808080"/>
+            <rect x="170" y="0" width="48" height="10" fill="#808080"/>
+            <rect x="189" y="0" width="10" height="50" fill="#808080"/>
+            <rect x="228" y="0" width="48" height="10" fill="#808080"/>
+            <rect x="228" y="0" width="10" height="50" fill="#808080"/>
+            <rect x="228" y="20" width="38" height="10" fill="#808080"/>
+            <rect x="228" y="40" width="48" height="10" fill="#808080"/>
+          </g>
+          <rect x="120" y="66" width="60" height="3" rx="1.5" fill="#2ba8a1"/>
+          <text x="150" y="92" text-anchor="middle" font-family="'Chakra Petch', sans-serif" font-weight="600" font-size="22" letter-spacing="9" fill="#2ba8a1">OWNERS CLUB</text>
+          <text x="150" y="118" text-anchor="middle" font-family="'DM Sans', sans-serif" font-weight="300" font-size="9" letter-spacing="3" fill="#999">Built Simple. Made Yours.</text>
+        </svg>
+      </div>
+      <div class="meta">
+        <span class="name">Full Lockup — Light / Centered</span>
+        <span class="tag">RECOMMENDED</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recommended avatar pairings -->
+  <div class="section-title" style="margin-top: 10px;">Paired Avatar Marks</div>
+  <div class="avatar-row" style="margin-top: 16px;">
+    <div class="av">
+      <div class="frame sq" style="background:#0a0a0a;">
+        <svg width="96" height="80" viewBox="0 0 96 80" fill="none">
+          <g transform="translate(6, 8)">
+            <rect x="0" y="0" width="38" height="8" fill="#a0a0a0"/>
+            <rect x="0" y="0" width="8" height="24" fill="#a0a0a0"/>
+            <rect x="0" y="16" width="38" height="8" fill="#a0a0a0"/>
+            <rect x="30" y="16" width="8" height="24" fill="#a0a0a0"/>
+            <rect x="0" y="32" width="38" height="8" fill="#a0a0a0"/>
+          </g>
+          <text x="52" y="45" font-family="'Chakra Petch', sans-serif" font-weight="700" font-size="34" letter-spacing="2" fill="#3dc8c0">OC</text>
+          <text x="48" y="66" font-family="'Chakra Petch', sans-serif" font-weight="400" font-size="8" letter-spacing="5" fill="#555">OWNERS CLUB</text>
+        </svg>
+      </div>
+      <span class="lbl">AVATAR — DARK</span>
+    </div>
+
+    <div class="av">
+      <div class="frame sq" style="background:#f0eeeb;">
+        <svg width="96" height="80" viewBox="0 0 96 80" fill="none">
+          <g transform="translate(6, 8)">
+            <rect x="0" y="0" width="38" height="8" fill="#808080"/>
+            <rect x="0" y="0" width="8" height="24" fill="#808080"/>
+            <rect x="0" y="16" width="38" height="8" fill="#808080"/>
+            <rect x="30" y="16" width="8" height="24" fill="#808080"/>
+            <rect x="0" y="32" width="38" height="8" fill="#808080"/>
+          </g>
+          <text x="52" y="45" font-family="'Chakra Petch', sans-serif" font-weight="700" font-size="34" letter-spacing="2" fill="#2ba8a1">OC</text>
+          <text x="48" y="66" font-family="'Chakra Petch', sans-serif" font-weight="400" font-size="8" letter-spacing="5" fill="#aaa">OWNERS CLUB</text>
+        </svg>
+      </div>
+      <span class="lbl">AVATAR — LIGHT</span>
+    </div>
+
+    <div class="av">
+      <div class="frame circle" style="background:#0a0a0a;">
+        <svg width="70" height="90" viewBox="0 0 70 90" fill="none">
+          <g transform="translate(11, 8)">
+            <rect x="0" y="0" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="0" y="0" width="10" height="30" fill="#a0a0a0"/>
+            <rect x="0" y="20" width="48" height="10" fill="#a0a0a0"/>
+            <rect x="38" y="20" width="10" height="30" fill="#a0a0a0"/>
+            <rect x="0" y="40" width="48" height="10" fill="#a0a0a0"/>
+          </g>
+          <text x="35" y="78" text-anchor="middle" font-family="'Chakra Petch', sans-serif" font-weight="700" font-size="20" letter-spacing="4" fill="#3dc8c0">OC</text>
+        </svg>
+      </div>
+      <span class="lbl">CIRCLE — STACKED</span>
+    </div>
+
+    <div class="av">
+      <div class="frame circle" style="background:#0a0a0a;">
+        <svg width="100" height="56" viewBox="0 0 100 56" fill="none">
+          <g transform="translate(4, 8)">
+            <rect x="0" y="0" width="26" height="6" fill="#a0a0a0"/>
+            <rect x="0" y="0" width="6" height="16" fill="#a0a0a0"/>
+            <rect x="0" y="10" width="26" height="6" fill="#a0a0a0"/>
+            <rect x="20" y="10" width="6" height="16" fill="#a0a0a0"/>
+            <rect x="0" y="20" width="26" height="6" fill="#a0a0a0"/>
+            <rect x="32" y="0" width="26" height="6" fill="#3dc8c0"/>
+            <rect x="32" y="0" width="6" height="26" fill="#3dc8c0"/>
+            <rect x="52" y="0" width="6" height="26" fill="#3dc8c0"/>
+            <rect x="32" y="20" width="26" height="6" fill="#3dc8c0"/>
+            <rect x="64" y="0" width="26" height="6" fill="#3dc8c0"/>
+            <rect x="64" y="0" width="6" height="26" fill="#3dc8c0"/>
+            <rect x="64" y="20" width="26" height="6" fill="#3dc8c0"/>
+          </g>
+          <text x="50" y="48" text-anchor="middle" font-family="'DM Sans', sans-serif" font-weight="300" font-size="5.5" letter-spacing="3" fill="#555">SLATE OWNERS CLUB</text>
+        </svg>
+      </div>
+      <span class="lbl">CIRCLE — ALL BLOCK</span>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- BANNER -->
+<div class="section">
+  <div class="section-title">Application</div>
+  <div class="section-heading">Banner / Header</div>
+
+  <div class="banner">
+    <svg width="660" height="140" viewBox="0 0 660 140" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:relative;z-index:1;">
+      <!-- SLATE centered -->
+      <g transform="translate(92, 14)">
+        <rect x="0" y="0" width="48" height="10" fill="#a0a0a0"/>
+        <rect x="0" y="0" width="10" height="30" fill="#a0a0a0"/>
+        <rect x="0" y="20" width="48" height="10" fill="#a0a0a0"/>
+        <rect x="38" y="20" width="10" height="30" fill="#a0a0a0"/>
+        <rect x="0" y="40" width="48" height="10" fill="#a0a0a0"/>
+        <rect x="58" y="0" width="10" height="50" fill="#a0a0a0"/>
+        <rect x="58" y="40" width="44" height="10" fill="#a0a0a0"/>
+        <rect x="112" y="0" width="48" height="10" fill="#a0a0a0"/>
+        <rect x="112" y="0" width="10" height="50" fill="#a0a0a0"/>
+        <rect x="150" y="0" width="10" height="50" fill="#a0a0a0"/>
+        <rect x="112" y="20" width="48" height="10" fill="#a0a0a0"/>
+        <rect x="170" y="0" width="48" height="10" fill="#a0a0a0"/>
+        <rect x="189" y="0" width="10" height="50" fill="#a0a0a0"/>
+        <rect x="228" y="0" width="48" height="10" fill="#a0a0a0"/>
+        <rect x="228" y="0" width="10" height="50" fill="#a0a0a0"/>
+        <rect x="228" y="20" width="38" height="10" fill="#a0a0a0"/>
+        <rect x="228" y="40" width="48" height="10" fill="#a0a0a0"/>
+      </g>
+
+      <rect x="280" y="72" width="60" height="3" rx="1.5" fill="#3dc8c0"/>
+
+      <text x="310" y="98" text-anchor="middle"
+            font-family="'Chakra Petch', sans-serif" font-weight="600"
+            font-size="22" letter-spacing="9" fill="#3dc8c0">OWNERS CLUB</text>
+
+      <text x="310" y="124" text-anchor="middle"
+            font-family="'DM Sans', sans-serif" font-weight="300"
+            font-size="9" letter-spacing="3" fill="#3a3a3a">Built Simple. Made Yours.  ·  slateownersclub.com</text>
+    </svg>
+  </div>
+</div>
+
+<div style="text-align:center; padding: 30px 20px 50px;">
+  <p style="font-family: 'Space Mono', monospace; font-size: 0.6rem; color: #333; letter-spacing: 0.15em;">SOC LOGO v4 — FEB 2026</p>
+</div>
+
+</body>
+</html>
