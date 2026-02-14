@@ -1,0 +1,81 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <img src="/images/soc-logo.png" alt="Slate Owners Club Logo" class="hero-logo">
+        <p class="hero-tagline">{{ .Site.Params.tagline | default "Built Simple. Made Yours." }}</p>
+        <div class="hero-cta">
+            <a href="#membership" class="btn btn-accent">Join the Club</a>
+            <a href="#events" class="btn btn--secondary">Upcoming Events</a>
+            <a href="https://x.com/{{ .Site.Params.social.twitter }}" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">Follow on X</a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
+            <p>The Slate Owners Club is the first community for future Slate drivers—owners, builders, and tinkerers who believe the best trucks are the ones you make your own.</p>
+            <p>As we count down to the launch of the Blank Slate, we're bringing together early adopters and DIY enthusiasts ready to shape a new kind of electric ownership experience—simple, customizable, and unapologetically hands-on.</p>
+            <p>Whether you're already planning your first mods or just curious about what's ahead, this is where the journey begins.</p>
+            <p class="about-motto">"Built Simple. Made Yours."</p>
+        </div>
+    </div>
+</section>
+
+<!-- Events Section -->
+<section class="events" id="events">
+    <div class="container">
+        <h2 class="section-title">Events</h2>
+        <p class="section-subtitle">From local meetups to mod showcases and hands-on workshops—Slate Owners Club events bring builders and enthusiasts together.</p>
+
+        <div class="heylo-events-container">
+            <div
+                id="heylo-event-feed"
+                data-api-key="{{ .Site.Params.heyloApiKey }}"
+                data-community-id="{{ .Site.Params.heyloCommunityId }}">
+            </div>
+            <script src="https://www.heylo.com/embedded-events.min.js"></script>
+        </div>
+    </div>
+</section>
+
+<!-- Membership Section -->
+<section class="membership" id="membership">
+    <div class="container">
+        <h2 class="section-title">Membership</h2>
+        <p class="section-subtitle">The Slate Owners Club is an independent community built by owners, for owners.</p>
+
+        <div class="membership-content">
+            <p>Connect with fellow Slate drivers, share your customizations, attend events, and help grow a strong, supportive community of makers and explorers.</p>
+            <p>Whether you're into trail builds, shop mods, or simple upgrades—you'll find your crew here.</p>
+        </div>
+
+        <div class="membership-cta">
+            <a href="{{ .Site.Params.heyloGroupUrl }}" class="btn btn-accent" target="_blank" rel="noopener noreferrer">Join via Heylo</a>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="newsletter" id="newsletter">
+    <div class="container">
+        <h2 class="section-title">Stay in the Loop</h2>
+        <p class="section-subtitle">Get updates on events, builds, and community news.</p>
+
+        <form
+            action="https://buttondown.com/api/emails/embed-subscribe/{{ .Site.Params.buttondownUsername }}"
+            method="post"
+            class="newsletter-form"
+            target="_blank">
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+                <button type="submit" class="btn btn-accent">Subscribe</button>
+            </div>
+            <p class="newsletter-note">No spam, ever. Unsubscribe anytime.</p>
+        </form>
+    </div>
+</section>
+{{ end }}

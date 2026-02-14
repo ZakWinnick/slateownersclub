@@ -1,0 +1,81 @@
+# Hugo Configuration for Slate Owners Club
+baseURL = "https://slateownersclub.com/"
+languageCode = "en-us"
+title = "Slate Owners Club"
+theme = "soc"
+
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+summarylength = 70
+
+[minify]
+  minifyOutput = true
+
+[pagination]
+  pagerSize = 10
+
+[permalinks]
+  posts = "/:year/:month/:slug/"
+  events = "/events/:slug/"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Events"
+    url = "/#events"
+    weight = 2
+  [[menu.main]]
+    name = "Membership"
+    url = "/#membership"
+    weight = 3
+
+[params]
+  tagline = "Built Simple. Made Yours."
+  description = "The first community for Slate drivers—owners, builders, and tinkerers who believe the best trucks are the ones you make your own."
+  ogImage = "/images/soc-logo-social.png"
+  primaryColor = "#2B2D2F"
+  accentColor = "#D4852F"
+
+  heyloApiKey = "e2367bdf-83af-4c65-968b-692fac480942"
+  heyloCommunityId = "263e1b28-c0da-4d81-9c83-3c65bc00337b"
+  heyloGroupUrl = "https://heylo.group/slateownersclub"
+
+  tinylyticsId = "Eo2Qc1sfY79tA_4K83iq"
+  buttondownUsername = "slateownersclub"
+
+  [params.social]
+    twitter = "slateownersclub"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    noClasses = false
+    style = "monokai"
+
+[security]
+  [security.funcs]
+    getenv = ["^HUGO_", "^CI$"]
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
